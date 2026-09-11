@@ -1,33 +1,21 @@
-<<<<<<< HEAD
-
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Daily Mise — The Gastronomic Diversions Page</title>
+    <title>Food For Thought — The Gastronomic Diversions Page</title>
     <link rel="stylesheet" href="style.css">
-    
-    <!-- 🛠️ Corrected browser ESM script injection mapping path -->
-    <script type="importmap">
-      {
-        "imports": {
-          "@google/generative-ai": "https://esm.run/@google/generative-ai"
-        }
-      }
-    </script>
 </head>
 <body>
     <div class="newspaper-shell">
         <!-- Vintage Newspaper Masthead -->
         <header class="masthead">
             <div class="masthead-edition">Late Edition • All the News That's Fit to Mince</div>
-            <h1 class="masthead-title">The Daily Mise</h1>
+            <h1 class="masthead-title">Food For Thought</h1>
             <div class="masthead-meta">
                 <span>VOL. I • NO. 404</span>
-                <span class="date-stamp">Friday, September 11, 2026</span>
-                <span>PRICE: YOUR DIGNITY</span>
+                <span class="date-stamp">Saturday, September 12, 2026</span>
+                <span>PRICE: YOUR FOOD</span>
             </div>
         </header>
 
@@ -37,7 +25,7 @@
                 <span class="search-icon">🔍</span>
                 <input type="text" id="dish-input" placeholder="Name a dish — lasagna, biryani, regret..." autocomplete="off">
             </div>
-            <button id="generate-btn" class="action-button">Make Today's Puzzle</button>
+            <button id="generate-btn" class="action-button">Make Recipe</button>
             <div id="error-toast" class="error-toast hidden"></div>
         </section>
 
@@ -46,15 +34,15 @@
             <!-- Left Panel: Editorial Header & Dense Clue Columns -->
             <main class="editorial-panel">
                 <header class="panel-header">
-                    <p class="section-tagline">THE GASTRONOMIC DIVERSIONS PAGE</p>
-                    <h2 id="active-dish-title" class="recipe-headline">How to Make Sunday Roast Chicken</h2>
-                    <p class="recipe-subhead">A perfectly serviceable dinner, converted into a dense, interlocking matrix of lexical despair and culinary obfuscation.</p>
+                    <p class="section-tagline">THE DDC PAGE</p>
+                    <h2 id="active-dish-title" class="recipe-headline">How to Make Dinner</h2>
+                    <p class="recipe-subhead">A perfect dinner, converted into simple easy to understand instructions for you.</p>
                 </header>
 
                 <div class="clues-container">
                     <div class="clues-header-row">
                         <h3>METHOD OF PREPARATION</h3>
-                        <span class="clue-count">10 DIABOLICAL CLUES</span>
+                        <span class="clue-count">10 HELPFUL CLUES</span>
                     </div>
                     
                     <div class="clues-columns">
@@ -103,10 +91,9 @@
         </div>
     </div>
 
-    <!-- Script hooks deferred safely to ensure unified loading cycles -->
-    <script src="ai.js" type="module" defer></script>
+    <!-- Script hooks configured sequentially for clean standard execution passes -->
+    <script src="ai.js" defer></script>
     <script src="crossword.js" defer></script>
     <script src="app.js" defer></script>
 </body>
 </html>
->>>>>>> 7a4fe0b (Initial commit)

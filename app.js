@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         errorToast.textContent = '';
 
         if (!AI_ENGINE.validateDish(queryText)) {
-            errorToast.textContent = `CRITICAL ERROR: Input must contain valid text characters.`;
+            errorToast.textContent = `CRITICAL ERROR: Input must contain valid alphabetical characters.`;
             errorToast.classList.remove('hidden');
             return;
         }
@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
         generateBtn.textContent = "Processing...";
 
         try {
-            // Forces the network layer to resolve directly without masking errors
             const puzzleData = await AI_ENGINE.generateCrosswordPayload(queryText);
 
             activeDishTitle.textContent = `How to Make ${capitalizePhrase(queryText)}`;
@@ -52,13 +51,12 @@ document.addEventListener('DOMContentLoaded', () => {
             CrosswordEngine.renderGrid(crosswordGrid, puzzleData);
 
         } catch (error) {
-            console.error("Pipeline Core Intercept Error:", error);
             errorToast.textContent = `⚠️ Engine Fault: ${error.message}`;
             errorToast.classList.remove('hidden');
             crosswordGrid.innerHTML = `<div class="grid-placeholder">Generation aborted.<br>${error.message}</div>`;
         } finally {
             generateBtn.disabled = false;
-            generateBtn.textContent = "Make Today's Puzzle";
+            generateBtn.textContent = "Make Recipe"; // Matches index button layout update string
         }
     }
 
