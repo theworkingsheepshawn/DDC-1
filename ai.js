@@ -8,6 +8,7 @@ const AI_ENGINE = {
     // ⚠️ HACKATHON SETUP: Paste your active Gemini API key inside the quotes below
     API_KEY: process.env.GOOGLE_API_KEY, 
 
+    
     _getApiKey: function() {
         if (this.API_KEY && this.API_KEY.trim() !== "" && this.API_KEY !== "YOUR_API_KEY_HERE") return this.API_KEY;
         const savedKey = sessionStorage.getItem("GEMINI_API_KEY");
