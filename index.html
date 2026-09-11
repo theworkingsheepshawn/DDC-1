@@ -1,1 +1,112 @@
+<<<<<<< HEAD
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Mise — The Gastronomic Diversions Page</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- 🛠️ Corrected browser ESM script injection mapping path -->
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+      }
+    </script>
+</head>
+<body>
+    <div class="newspaper-shell">
+        <!-- Vintage Newspaper Masthead -->
+        <header class="masthead">
+            <div class="masthead-edition">Late Edition • All the News That's Fit to Mince</div>
+            <h1 class="masthead-title">The Daily Mise</h1>
+            <div class="masthead-meta">
+                <span>VOL. I • NO. 404</span>
+                <span class="date-stamp">Friday, September 11, 2026</span>
+                <span>PRICE: YOUR DIGNITY</span>
+            </div>
+        </header>
+
+        <!-- Dynamic Control Banner -->
+        <section class="control-banner">
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="dish-input" placeholder="Name a dish — lasagna, biryani, regret..." autocomplete="off">
+            </div>
+            <button id="generate-btn" class="action-button">Make Today's Puzzle</button>
+            <div id="error-toast" class="error-toast hidden"></div>
+        </section>
+
+        <!-- Main Print Layout Split -->
+        <div class="newspaper-layout">
+            <!-- Left Panel: Editorial Header & Dense Clue Columns -->
+            <main class="editorial-panel">
+                <header class="panel-header">
+                    <p class="section-tagline">THE GASTRONOMIC DIVERSIONS PAGE</p>
+                    <h2 id="active-dish-title" class="recipe-headline">How to Make Sunday Roast Chicken</h2>
+                    <p class="recipe-subhead">A perfectly serviceable dinner, converted into a dense, interlocking matrix of lexical despair and culinary obfuscation.</p>
+                </header>
+
+                <div class="clues-container">
+                    <div class="clues-header-row">
+                        <h3>METHOD OF PREPARATION</h3>
+                        <span class="clue-count">10 DIABOLICAL CLUES</span>
+                    </div>
+                    
+                    <div class="clues-columns">
+                        <!-- Across Column -->
+                        <div class="clue-block">
+                            <h4>ACROSS</h4>
+                            <ul id="across-clues" class="clue-list">
+                                <!-- Generated elements appear here dynamically -->
+                            </ul>
+                        </div>
+                        
+                        <!-- Down Column -->
+                        <div class="clue-block">
+                            <h4>DOWN</h4>
+                            <ul id="down-clues" class="clue-list">
+                                <!-- Generated elements appear here dynamically -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Right Panel: The High-Density Crossword Grid Shell -->
+            <aside class="puzzle-panel">
+                <div class="puzzle-header">
+                    <div class="puzzle-meta">
+                        <span class="puzzle-number">PUZZLE NO. 10</span>
+                        <h3 class="puzzle-title">The Impossible Supper</h3>
+                    </div>
+                    <button id="erase-btn" class="erase-button">
+                        <span class="erase-icon">⟳</span> ERASE
+                    </button>
+                </div>
+
+                <!-- The Interactive Rendering Box -->
+                <div class="grid-viewframe">
+                    <div id="crossword-grid" class="crossword-grid-matrix">
+                        <div class="grid-placeholder">Your structural puzzle will manifest here. Enter a valid dish above to invoke the matrix.</div>
+                    </div>
+                </div>
+
+                <footer class="puzzle-footer">
+                    <p><em>Notice: Answers have been entirely withheld in the public interest. Pressing Spacebar changes input vector alignment at active intersections.</em></p>
+                </footer>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Script hooks deferred safely to ensure unified loading cycles -->
+    <script src="ai.js" type="module" defer></script>
+    <script src="crossword.js" defer></script>
+    <script src="app.js" defer></script>
+</body>
+</html>
+>>>>>>> 7a4fe0b (Initial commit)

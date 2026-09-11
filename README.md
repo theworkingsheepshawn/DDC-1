@@ -5,7 +5,11 @@
 # [Project Name] 🎯
 
 
+<<<<<<< HEAD
 ## Basic Details
+=======
+## Basic Deta
+>>>>>>> 7a4fe0b (Initial commit)
 ### Team Name: [Name]
 
 
