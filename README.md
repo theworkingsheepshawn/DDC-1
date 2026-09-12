@@ -6,12 +6,12 @@
 
 
 
-### Team Name: [DDC-1]
+### Team Name: DDC-1
 
 
 ### Team Members
-- Member 1: [Shawn Jose] - [TKMCE]
-- Member 2: [Bharath Sathiajith] - [TKMCE]
+- Member 1: Shawn Jose - TKMCE
+- Member 2: Bharath Sathiajith - TKMCE
 
 ### Project Description
 Need a Recepie for a dish you really like? Just ask Food For Thought for the recipe.
